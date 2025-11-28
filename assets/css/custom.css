@@ -1,0 +1,176 @@
+/* ABOUTME: Custom dark terminal color scheme for portfolio site */
+/* ABOUTME: GitHub-inspired dark mode with cyan/orange/purple accents */
+
+:root {
+  --background: #0d1117;
+  --foreground: #c9d1d9;
+  --accent: #58a6ff;
+  --accent-secondary: #f0883e;
+  --accent-tertiary: #a371f7;
+  --success: #3fb950;
+  --border: #30363d;
+  --code-bg: #161b22;
+  --muted: #8b949e;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--accent-secondary);
+}
+
+/* Override theme colors */
+.terminal {
+  --color-background: var(--background);
+  --color-text: var(--foreground);
+  --color-accent: var(--accent);
+}
+
+/* Syntax highlighting */
+.highlight pre {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+}
+
+/* Project and repo cards */
+.featured-projects,
+.repos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.project-card,
+.repo-card {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.25rem;
+  transition: border-color 0.2s;
+}
+
+.project-card:hover,
+.repo-card:hover {
+  border-color: var(--accent);
+}
+
+.project-card h3,
+.repo-card h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.project-card h3 a,
+.repo-card h4 a {
+  text-decoration: none;
+}
+
+.project-card p,
+.repo-card p {
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+/* Tech stack tags */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.tech-tag {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  color: var(--accent-secondary);
+}
+
+/* Repo metadata */
+.repo-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
+
+.repo-meta .language::before {
+  content: "●";
+  margin-right: 0.3rem;
+  color: var(--accent-tertiary);
+}
+
+/* Loading and error states */
+.loading {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.error {
+  color: var(--accent-secondary);
+}
+
+/* View all link */
+.view-all {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+/* Social links */
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.social-links a:hover {
+  color: var(--accent);
+}
+
+/* Homelab service table */
+.service-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.service-table th,
+.service-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.service-table th {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.service-table tr:hover td {
+  background: var(--code-bg);
+}
+
+/* Section headings */
+h2 {
+  color: var(--accent);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}

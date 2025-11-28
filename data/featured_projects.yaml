@@ -1,0 +1,25 @@
+# ABOUTME: Curated list of featured projects displayed on the projects page
+# ABOUTME: Update this file to add/remove/reorder featured projects
+
+projects:
+  # TODO: Replace with your actual featured projects
+  - name: "example-project-1"
+    description: "Brief description of what this project does and why it's interesting"
+    url: "https://github.com/malston/example-project-1"
+    tech:
+      - Go
+      - Kubernetes
+
+  - name: "example-project-2"
+    description: "Another project description highlighting key features"
+    url: "https://github.com/malston/example-project-2"
+    tech:
+      - Python
+      - Terraform
+
+  - name: "example-project-3"
+    description: "Third featured project with its unique value proposition"
+    url: "https://github.com/malston/example-project-3"
+    tech:
+      - TypeScript
+      - React

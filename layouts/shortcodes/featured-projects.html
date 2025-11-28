@@ -1,0 +1,17 @@
+{{/* ABOUTME: Renders featured projects from data/featured_projects.yaml */}}
+{{/* ABOUTME: Displays as a responsive card grid with tech stack tags */}}
+
+{{ $projects := .Site.Data.featured_projects.projects }}
+<div class="featured-projects">
+  {{ range $projects }}
+  <article class="project-card">
+    <h3><a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a></h3>
+    <p>{{ .description }}</p>
+    <div class="tech-stack">
+      {{ range .tech }}
+      <span class="tech-tag">{{ . }}</span>
+      {{ end }}
+    </div>
+  </article>
+  {{ end }}
+</div>

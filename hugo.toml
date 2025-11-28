@@ -1,0 +1,59 @@
+# ABOUTME: Main Hugo configuration for personal portfolio site
+# ABOUTME: Uses hugo-theme-terminal with custom dark styling
+
+baseURL = 'https://malston.dev/'
+languageCode = 'en-us'
+title = 'Mark Alston'
+
+[module]
+  [[module.imports]]
+    path = "github.com/panr/hugo-theme-terminal/v4"
+
+[params]
+  contentTypeName = "posts"
+  themeColor = "blue"
+  showMenuItems = 4
+  showLanguageSelector = false
+  fullWidthTheme = false
+  centerTheme = true
+  customCSS = ["css/custom.css"]
+
+  # Social links
+  email = ""
+  github = "malston"
+  linkedin = ""
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[pagination]
+  pagerSize = 5
+
+# Navigation menu
+[[menu.main]]
+  identifier = "home"
+  name = "~/"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "projects"
+  name = "projects"
+  url = "/projects/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "homelab"
+  name = "homelab"
+  url = "/homelab/"
+  weight = 3
+
+[[menu.main]]
+  identifier = "about"
+  name = "about"
+  url = "/about/"
+  weight = 4

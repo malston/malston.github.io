@@ -1,0 +1,17 @@
+# ABOUTME: Docker Compose for production deployment
+# ABOUTME: Builds Hugo site and serves via Caddy
+
+services:
+  website:
+    build: .
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+    restart: unless-stopped
+
+volumes:
+  caddy_data:
+  caddy_config:
