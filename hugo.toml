@@ -1,7 +1,7 @@
 # ABOUTME: Main Hugo configuration for personal portfolio site
 # ABOUTME: Uses hugo-theme-terminal with custom dark styling
 
-baseURL = 'https://malston.dev/'
+baseURL = 'https://markalston.net/'
 languageCode = 'en-us'
 title = 'Mark Alston'
 
