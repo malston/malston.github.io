@@ -12,7 +12,7 @@ title = 'Mark Alston'
 [params]
   contentTypeName = "posts"
   themeColor = "blue"
-  showMenuItems = 4
+  showMenuItems = 5
   showLanguageSelector = false
   fullWidthTheme = false
   centerTheme = true
@@ -53,7 +53,13 @@ title = 'Mark Alston'
   weight = 3
 
 [[menu.main]]
+  identifier = "homelab-legacy"
+  name = "homelab-legacy"
+  url = "https://malston.github.io/homelab-legacy/"
+  weight = 4
+
+[[menu.main]]
   identifier = "about"
   name = "about"
   url = "/about/"
-  weight = 4
+  weight = 5
