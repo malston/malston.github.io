@@ -1,16 +1,25 @@
 /* ABOUTME: Custom dark terminal color scheme for portfolio site */
-/* ABOUTME: GitHub-inspired dark mode with cyan/orange/purple accents */
+/* ABOUTME: Nord theme - muted blues and teals on dark background */
 
 :root {
-  --background: #0d1117;
-  --foreground: #c9d1d9;
-  --accent: #58a6ff;
-  --accent-secondary: #f0883e;
-  --accent-tertiary: #a371f7;
-  --success: #3fb950;
-  --border: #30363d;
-  --code-bg: #161b22;
-  --muted: #8b949e;
+  /* Nord Polar Night (backgrounds) */
+  --background: #2e3440;
+  --code-bg: #3b4252;
+  --border: #4c566a;
+
+  /* Nord Snow Storm (text) */
+  --foreground: #eceff4;
+  --muted: #d8dee9;
+
+  /* Nord Frost (accent blues/teals) */
+  --accent: #88c0d0;
+  --accent-secondary: #81a1c1;
+  --accent-tertiary: #8fbcbb;
+
+  /* Nord Aurora (highlights) */
+  --success: #a3be8c;
+  --warning: #ebcb8b;
+  --error: #bf616a;
 }
 
 body {
@@ -23,14 +32,54 @@ a {
 }
 
 a:hover {
-  color: var(--accent-secondary);
+  color: var(--accent-tertiary);
 }
 
-/* Override theme colors */
+/* Override theme's root colors - must use !important because theme CSS loads after */
+:root {
+  --accent: #88c0d0 !important;
+  --color-background: #2e3440 !important;
+  --color-text: #eceff4 !important;
+  --color-accent: #88c0d0 !important;
+  --color-secondary-background: #3b4252 !important;
+  --color-secondary-text: #d8dee9 !important;
+  --color-border: #4c566a !important;
+  --color-code-background: #3b4252 !important;
+}
+
+/* Force override on html and body */
+html,
+body,
 .terminal {
-  --color-background: var(--background);
-  --color-text: var(--foreground);
-  --color-accent: var(--accent);
+  background: #2e3440 !important;
+  background-color: #2e3440 !important;
+}
+
+/* Override the terminal logo colors */
+.logo {
+  background: var(--accent) !important;
+  color: var(--background) !important;
+}
+
+.logo__mark {
+  color: var(--accent) !important;
+}
+
+.logo__text {
+  color: var(--accent) !important;
+}
+
+.logo__cursor {
+  background: var(--accent-tertiary) !important;
+}
+
+/* Override menu link colors */
+.menu a {
+  color: var(--accent);
+}
+
+.menu a:hover {
+  color: var(--foreground);
 }
 
 /* Syntax highlighting */
@@ -119,7 +168,7 @@ a:hover {
 }
 
 .error {
-  color: var(--accent-secondary);
+  color: var(--error);
 }
 
 /* View all link */
