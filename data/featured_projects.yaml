@@ -17,42 +17,9 @@ projects:
     tech:
       - Go
 
-  - name: "claudeup-lab"
-    description: "Ephemeral devcontainer environments for testing Claude Code configurations"
-    url: "https://github.com/claudeup/claudeup-lab"
-    tech:
-      - Go
-      - Docker
-
-  - name: "claude-config"
-    description: "Portable configuration for Claude Code CLI with hooks, skills, commands, and devcontainer support"
-    url: "https://github.com/malston/claude-config"
-    tech:
-      - Docker
-      - Bash
-
-  - name: "claude-code-wiki"
-    description: "Deep dives into Claude Code internals, patterns, and optimization techniques"
-    url: "https://github.com/malston/claude-code-wiki"
-    tech:
-      - Hugo
-      - JavaScript
-
   - name: "bosh-mcp-server"
     description: "MCP server that provides BOSH Director operations to AI assistants"
     url: "https://github.com/malston/bosh-mcp-server"
-    tech:
-      - Go
-
-  - name: "bosh-operator"
-    description: "Claude Code plugin providing a conversational BOSH operations assistant"
-    url: "https://github.com/malston/bosh-operator"
-    tech:
-      - Claude Code
-
-  - name: "bosh-mock-director"
-    description: "Mock BOSH Director server for testing the bosh-mcp-server"
-    url: "https://github.com/malston/bosh-mock-director"
     tech:
       - Go
 
@@ -62,19 +29,6 @@ projects:
     tech:
       - Go
 
-  - name: "otlp-mock-receiver"
-    description: "Learning tool for understanding OpenTelemetry log ingestion and transformation, simulating Cribl-like processing for TAS logs"
-    url: "https://github.com/malston/otlp-mock-receiver"
-    tech:
-      - Go
-
-  - name: "openapi-docs-generator"
-    description: "Claude Code plugin that generates OpenAPI/Swagger documentation from Go API code"
-    url: "https://github.com/malston/openapi-docs-generator"
-    tech:
-      - JavaScript
-      - Python
-
   - name: "chrome-tabs"
     description: "Chrome extension for managing tabs by organizing by category, removing duplicates, and saving to bookmarks"
     url: "https://github.com/malston/chrome-tabs"
@@ -82,46 +36,15 @@ projects:
       - TypeScript
       - JavaScript
 
-  - name: "git-repo-organizer"
-    description: "CLI tool for managing git repositories with symlinks via YAML configuration"
-    url: "https://github.com/malston/git-repo-organizer"
-    tech:
-      - Python
-
   - name: "tile-diff"
     description: "CLI tool to compare Ops Manager product tile configurations between versions, identifying changes required during upgrades"
     url: "https://github.com/malston/tile-diff"
     tech:
       - Go
 
-  - name: "release-monitor"
-    description: "Monitors GitHub repositories for new releases, useful for CI/CD pipelines and dependency tracking"
-    url: "https://github.com/malston/release-monitor"
+  - name: "claude-code-wiki"
+    description: "Deep dives into Claude Code internals, patterns, and optimization techniques"
+    url: "https://github.com/malston/claude-code-wiki"
     tech:
-      - Python
-
-  - name: "tkgi-app-tracker"
-    description: "Automated tracking and reporting system for TKGI clusters to identify active applications versus migrated workloads"
-    url: "https://github.com/malston/tkgi-app-tracker"
-    tech:
-      - Python
-
-  - name: "tas-vcf"
-    description: "Terraform and scripts for deploying Tanzu Application Service to VCF homelab environments"
-    url: "https://github.com/malston/tas-vcf"
-    tech:
-      - Terraform
-      - Bash
-
-  - name: "vsphere-architect"
-    description: "Claude skill for VMware vSphere architecture, design, and troubleshooting guidance"
-    url: "https://github.com/malston/vsphere-architect"
-    tech:
-      - Claude Code
-
-  - name: "shared-isoseg-demo"
-    description: "Demonstrates Cloud Foundry isolation segments with shared routing for transparent workload isolation"
-    url: "https://github.com/malston/shared-isoseg-demo"
-    tech:
-      - Bash
-      - Cloud Foundry
+      - Hugo
+      - JavaScript
